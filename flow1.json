@@ -1,1 +1,1 @@
-[]
+[{"id":"33cd620b.ab751e","type":"tab","label":"Flow 1","disabled":false,"info":""},{"id":"974f758a.0da978","type":"http in","z":"33cd620b.ab751e","name":"","url":"","method":"get","upload":false,"x":260,"y":260,"wires":[[]]},{"id":"bf0750ce.d17b4","type":"websocket in","z":"33cd620b.ab751e","name":"","x":440,"y":280,"wires":[[]]}]

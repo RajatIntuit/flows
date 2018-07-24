@@ -339,8 +339,8 @@
         "type": "elasticron",
         "z": "7f6d35dc.a5024c",
         "parameters": {
-            "schedule": "",
-            "payload": "{}",
+            "schedule": "1",
+            "payload": "",
             "props": "{}"
         },
         "is_user_parameter": {
@@ -349,9 +349,9 @@
             "iup_props": false
         },
         "name": "Elasticron",
-        "schedule": "",
+        "schedule": "1",
         "iup_schedule": false,
-        "payload": "{}",
+        "payload": "",
         "iup_payload": false,
         "props": "{}",
         "iup_props": false,
@@ -473,7 +473,7 @@
             "#c5b0d5"
         ],
         "useOldStyle": false,
-        "x": 290,
+        "x": 370,
         "y": 100,
         "wires": [
             [],
@@ -752,6 +752,106 @@
         "y": 280,
         "wires": [
             [],
+            []
+        ]
+    },
+    {
+        "id": "77c35fb8.2e06e",
+        "type": "location",
+        "z": "7f6d35dc.a5024c",
+        "parameters": {
+            "location": "131332221021092015Comcast.RTVE",
+            "info": ""
+        },
+        "is_user_parameter": {},
+        "name": "Location",
+        "location": "131332221021092015Comcast.RTVE",
+        "info": "",
+        "x": 150,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "f711b5a.2e87348",
+        "type": "door",
+        "z": "7f6d35dc.a5024c",
+        "parameters": {
+            "door_ids": "[]",
+            "door_state": "[\"open\"]"
+        },
+        "is_user_parameter": {},
+        "name": "DoorOpen",
+        "door_ids": "[]",
+        "door_state": "[\"open\"]",
+        "x": 320,
+        "y": 460,
+        "wires": [
+            [
+                "82d75bea.085ce8:0"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "82d75bea.085ce8",
+        "type": "light",
+        "z": "7f6d35dc.a5024c",
+        "parameters": {
+            "light_ids": "[]",
+            "light_state": "on",
+            "dim_level": "5"
+        },
+        "is_user_parameter": {},
+        "name": "LightOn",
+        "light_ids": "[]",
+        "light_state": "on",
+        "dim_level": "5",
+        "x": 630,
+        "y": 340,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "bbf7e76c.914178",
+        "type": "light",
+        "z": "7f6d35dc.a5024c",
+        "parameters": {
+            "light_ids": "[]",
+            "light_state": "off",
+            "dim_level": "0"
+        },
+        "is_user_parameter": {},
+        "name": "LightOff",
+        "light_ids": "[]",
+        "light_state": "off",
+        "dim_level": "0",
+        "x": 670,
+        "y": 560,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "9b600a47.817ac8",
+        "type": "door",
+        "z": "7f6d35dc.a5024c",
+        "parameters": {
+            "door_ids": "[]",
+            "door_state": "[\"closed\"]"
+        },
+        "is_user_parameter": {},
+        "name": "DoorClosed",
+        "door_ids": "[]",
+        "door_state": "[\"closed\"]",
+        "x": 340,
+        "y": 580,
+        "wires": [
+            [
+                "bbf7e76c.914178:0"
+            ],
             []
         ]
     }

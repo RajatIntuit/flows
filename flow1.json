@@ -526,7 +526,7 @@
         "console": false,
         "tostatus": false,
         "complete": "false",
-        "x": 550,
+        "x": 590,
         "y": 240,
         "wires": []
     },
@@ -806,8 +806,8 @@
         "light_ids": "[]",
         "light_state": "on",
         "dim_level": "5",
-        "x": 630,
-        "y": 340,
+        "x": 620,
+        "y": 280,
         "wires": [
             [],
             []

@@ -278,7 +278,7 @@
         "door_state": "[]",
         "iup_door_state": false,
         "x": 170,
-        "y": 560,
+        "y": 580,
         "wires": [
             [
                 "f70045d1.d64a38:0"
@@ -531,20 +531,6 @@
         "wires": []
     },
     {
-        "id": "a3f8e6b4.129438",
-        "type": "debugfn",
-        "z": "33cd620b.ab751e",
-        "parameters": {},
-        "is_user_parameter": {},
-        "name": "Debug",
-        "x": 490,
-        "y": 560,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
         "id": "f70045d1.d64a38",
         "type": "light",
         "z": "33cd620b.ab751e",
@@ -568,9 +554,7 @@
         "x": 330,
         "y": 560,
         "wires": [
-            [
-                "a3f8e6b4.129438:0"
-            ],
+            [],
             []
         ]
     },
@@ -689,7 +673,7 @@
             "order": 0,
             "width": 0,
             "height": 0,
-            "label": "chart2",
+            "label": "chart3",
             "chartType": "line",
             "legend": "false",
             "xformat": "HH:mm:ss",
@@ -722,7 +706,7 @@
         "order": 0,
         "width": 0,
         "height": 0,
-        "label": "chart2",
+        "label": "chart3",
         "chartType": "line",
         "legend": "false",
         "xformat": "HH:mm:ss",
@@ -852,6 +836,30 @@
             [
                 "bbf7e76c.914178:0"
             ],
+            []
+        ]
+    },
+    {
+        "id": "570ae382.768d6c",
+        "type": "door",
+        "z": "33cd620b.ab751e",
+        "parameters": {
+            "door_ids": "[]",
+            "door_state": "[]"
+        },
+        "is_user_parameter": {
+            "iup_door_ids": true,
+            "iup_door_state": false
+        },
+        "name": "Door",
+        "door_ids": "[]",
+        "iup_door_ids": true,
+        "door_state": "[]",
+        "iup_door_state": false,
+        "x": 640,
+        "y": 120,
+        "wires": [
+            [],
             []
         ]
     }
